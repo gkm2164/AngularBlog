@@ -1,0 +1,30 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ArticleComponent } from './article/article.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './/app-routing.module';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    NavbarComponent,
+    FooterComponent,
+    SidebarComponent,
+    ArticleComponent,
+    HomeComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
